@@ -1,0 +1,12 @@
+<router-outlet></router-outlet>
+<div class="bodyContain">
+    <h1 id="header">Water Consumption Tracker</h1>
+    <div class="myContainer">
+        <form class="myform">
+            customerName : <input type="text" (ngModel)="name" (input)="change_name($event)">
+            amtLiters : <input type="text" (ngModel)="liter_amt" (input)="change_liters_amt($event)">
+            DateOfConsumption : <input type="date" (ngModel)="dateConsumption" (input)="change_DateConsumption($event)">
+            <button type="button" (click)="post()">Update</button>
+        </form>
+    </div>
+</div>
